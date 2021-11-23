@@ -1,0 +1,15 @@
+customer:{customer_ID int, customer_name varchar, customer_borrow_no int (PK:customer_ID int)}
+borrowing:{int, book_nr int(PK:borrowing_ID int)}
+employee:{employee_ID int, employee_borrow_number int, employee_return_no int, employee_name varchar,(PK:employee_ID int)}
+returning:{(PK:returning_borrow_number int)}
+reserving:{reserving_name varchar (PK:reserving_no int)}
+book_copy:{book_copy_origin varchar, book_copy_name (PK:book_copy_id int)}
+book:{book_name varchar, (PK:book_id int)}
+publishing_house:{(PK:publishing_house_name)}
+author:{author_book_nr int, author_name varchar(PK: author_id int)}
+several_authors:{several_authors_name varchar(PK:several_authors_id int)}
+keywords:{keywords_names varchar(PK:keywords_keys varchar}
+sub_area:{sub_area_name varchar(PK:sub_area_id int)}
+shelf:{shelf_shelfs int(PK:shelf_id int)}
+articles:{articles_names varchar(PK:articles_id int)}
+journal:{journal_name varchar(PK:journal_id int)}
